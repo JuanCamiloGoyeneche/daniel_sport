@@ -1,22 +1,591 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Daniel Sport</title>
+    <meta name="description" content="Daniel Sport Barbería - Estilo, precisión y actitud en cada corte. La mejor barbería en Valledupar, Cesar.">
+    <title>Daniel Sport Barbería | Valledupar</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <header>
-        <h1>Daniel Sport</h1>
-    </header>
-    <main>
-        <p>Welcome to Daniel Sport</p>
-    </main>
-    <footer>
-        <p>&copy; 2025 Daniel Sport</p>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNavbar">
+        <div class="container">
+            <a class="navbar-brand" href="#hero">
+                <img src="images/logo.jpeg" alt="Daniel Sport Barbería" class="navbar-logo">
+                <span class="brand-text"><span class="brand-gold">DANIEL</span> <span class="brand-white">SPORT</span></span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#servicios">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#galeria">Galería</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#productos">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#ubicacion">Ubicación</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h1 class="hero-title" data-aos="fade-down" data-aos-duration="1000">
+                        <span class="brand-gold">DANIEL</span> <span class="brand-white">SPORT</span> <span class="brand-gold">BARBERÍA</span>
+                    </h1>
+                    <p class="hero-subtitle" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                        Estilo, precisión y actitud en cada corte
+                    </p>
+                    <div class="hero-buttons" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+                        <a href="#ubicacion" class="btn btn-gold btn-lg me-3">
+                            <i class="fas fa-map-marker-alt me-2"></i>Ver Ubicación
+                        </a>
+                        <a href="https://wa.me/573107050064" target="_blank" class="btn btn-outline-gold btn-lg">
+                            <i class="fab fa-whatsapp me-2"></i>WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Servicios Section -->
+    <section id="servicios" class="servicios-section">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <h2>Nuestros Servicios</h2>
+                <p>Calidad profesional en cada detalle</p>
+            </div>
+            <div class="row g-4">
+                <!-- Corte -->
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-cut"></i>
+                        </div>
+                        <h3>Corte</h3>
+                        <p class="service-price">$18.000</p>
+                        <p class="service-desc">Corte profesional con estilo moderno</p>
+                    </div>
+                </div>
+                <!-- Corte + Barba -->
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-card featured">
+                        <div class="service-badge">
+                            <i class="fas fa-star"></i> Popular
+                        </div>
+                        <div class="service-icon">
+                            <i class="fas fa-user-tie"></i>
+                        </div>
+                        <h3>Corte + Barba</h3>
+                        <p class="service-price">$27.000</p>
+                        <p class="service-desc">Combo completo para look impecable</p>
+                    </div>
+                </div>
+                <!-- Barba -->
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-face-grin-beam"></i>
+                        </div>
+                        <h3>Barba</h3>
+                        <p class="service-price">$12.000</p>
+                        <p class="service-desc">Perfilado y arreglo de barba</p>
+                    </div>
+                </div>
+                <!-- Diseños -->
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                        <h3>Diseños</h3>
+                        <p class="service-price">desde $5.000</p>
+                        <p class="service-desc">Diseños personalizados y creativos</p>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-5" data-aos="fade-up" data-aos-delay="500">
+                <p class="service-note">
+                    <i class="fas fa-info-circle me-2"></i>
+                    Atención por orden de llegada, sin cita previa
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galería Section -->
+    <section id="galeria" class="galeria-section">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <h2>Nuestra Galería</h2>
+                <p>Cortes modernos y estilo urbano</p>
+            </div>
+            
+            <!-- Swiper Carousel -->
+            <div class="swiper gallerySwiper" data-aos="fade-up" data-aos-delay="200">
+                <div class="swiper-wrapper">
+                    <!-- Slide 1 -->
+                    <div class="swiper-slide">
+                        <div class="gallery-item">
+                            <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?w=600&q=80" alt="Corte moderno 1">
+                            <div class="gallery-overlay">
+                                <h4>Corte Clásico</h4>
+                                <p>Estilo atemporal</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="swiper-slide">
+                        <div class="gallery-item">
+                            <img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?w=600&q=80" alt="Corte moderno 2">
+                            <div class="gallery-overlay">
+                                <h4>Fade Moderno</h4>
+                                <p>Tendencia urbana</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide 3 -->
+                    <div class="swiper-slide">
+                        <div class="gallery-item">
+                            <img src="https://images.unsplash.com/photo-1622286342621-4bd786c2447c?w=600&q=80" alt="Corte moderno 3">
+                            <div class="gallery-overlay">
+                                <h4>Barba Perfecta</h4>
+                                <p>Perfilado profesional</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide 4 -->
+                    <div class="swiper-slide">
+                        <div class="gallery-item">
+                            <img src="https://images.unsplash.com/photo-1599351431202-1e0f0137899a?w=600&q=80" alt="Corte moderno 4">
+                            <div class="gallery-overlay">
+                                <h4>Diseño Creativo</h4>
+                                <p>Arte en tu cabello</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide 5 -->
+                    <div class="swiper-slide">
+                        <div class="gallery-item">
+                            <img src="https://images.unsplash.com/photo-1621600411688-4be93cd68504?w=600&q=80" alt="Corte moderno 5">
+                            <div class="gallery-overlay">
+                                <h4>Pompadour</h4>
+                                <p>Estilo clásico renovado</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide 6 -->
+                    <div class="swiper-slide">
+                        <div class="gallery-item">
+                            <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?w=600&q=80" alt="Corte moderno 6">
+                            <div class="gallery-overlay">
+                                <h4>Undercut</h4>
+                                <p>Estilo audaz</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- Navigation -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre Nosotros Section -->
+    <section id="nosotros" class="nosotros-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <div class="nosotros-image">
+                        <img src="images/img_1.jpeg" alt="Daniel Sport Barbería" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="nosotros-content">
+                        <h2>Sobre Nosotros</h2>
+                        <p class="nosotros-text">
+                            En Daniel Sport Barbería ofrecemos atención directa, sin citas, con rapidez y calidad en cada servicio. Nos especializamos en cortes modernos con estilo urbano y profesional.
+                        </p>
+                        <div class="nosotros-features">
+                            <div class="feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Sin cita previa</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Atención rápida</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Calidad garantizada</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Estilo urbano</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Productos Section -->
+    <section id="productos" class="productos-section">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <h2>Nuestros Productos</h2>
+                <p>Accesorios y productos de calidad</p>
+            </div>
+            <div class="row g-4">
+                <!-- Ceras -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="product-card">
+                        <div class="product-icon">
+                            <i class="fas fa-spray-can"></i>
+                        </div>
+                        <h3>Ceras</h3>
+                        <p class="product-price">$20.000 - $35.000</p>
+                        <p class="product-desc">Ceras de alta calidad para tu peinado</p>
+                    </div>
+                </div>
+                <!-- Perfumes -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="product-card">
+                        <div class="product-icon">
+                            <i class="fas fa-pump-soap"></i>
+                        </div>
+                        <h3>Perfumes</h3>
+                        <p class="product-price">$50.000 - $120.000</p>
+                        <p class="product-desc">Fragancias exclusivas para hombres</p>
+                    </div>
+                </div>
+                <!-- Relojes -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="product-card">
+                        <div class="product-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <h3>Relojes</h3>
+                        <p class="product-price">Variedad de precios</p>
+                        <p class="product-desc">Relojes elegantes y modernos</p>
+                    </div>
+                </div>
+                <!-- Gorras -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+                    <div class="product-card">
+                        <div class="product-icon">
+                            <i class="fas fa-hat-cowboy"></i>
+                        </div>
+                        <h3>Gorras</h3>
+                        <p class="product-price">Variedad de precios</p>
+                        <p class="product-desc">Gorras con estilo urbano</p>
+                    </div>
+                </div>
+                <!-- Manillas -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+                    <div class="product-card">
+                        <div class="product-icon">
+                            <i class="fas fa-ring"></i>
+                        </div>
+                        <h3>Manillas</h3>
+                        <p class="product-price">Variedad de precios</p>
+                        <p class="product-desc">Accesorios para completar tu look</p>
+                    </div>
+                </div>
+                <!-- Más productos -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+                    <div class="product-card featured-product">
+                        <div class="product-icon">
+                            <i class="fas fa-store"></i>
+                        </div>
+                        <h3>¡Y más!</h3>
+                        <p class="product-price">Visítanos</p>
+                        <p class="product-desc">Descubre toda nuestra variedad</p>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-5" data-aos="fade-up" data-aos-delay="700">
+                <p class="product-note">
+                    <i class="fas fa-shopping-bag me-2"></i>
+                    Disponibles en nuestro punto físico
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonios Section -->
+    <section id="testimonios" class="testimonios-section">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <h2>Lo Que Dicen Nuestros Clientes</h2>
+                <p>Opiniones reales de quienes nos visitan</p>
+            </div>
+            <div class="row g-4">
+                <!-- Testimonio 1 -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">
+                            "Excelente servicio, muy profesionales y amables. El corte quedó perfecto. Definitivamente volveré."
+                        </p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="author-info">
+                                <h4>Carlos Martínez</h4>
+                                <p>Cliente frecuente</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Testimonio 2 -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">
+                            "La mejor barbería de Valledupar. Atención rápida y de calidad. El ambiente es muy agradable."
+                        </p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="author-info">
+                                <h4>Juan Pérez</h4>
+                                <p>Cliente satisfecho</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Testimonio 3 -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <p class="testimonial-text">
+                            "Muy buen trabajo con la barba, se nota que tienen experiencia. Los precios son justos por la calidad."
+                        </p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="author-info">
+                                <h4>Miguel Rodríguez</h4>
+                                <p>Nuevo cliente</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ubicación Section -->
+    <section id="ubicacion" class="ubicacion-section">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <h2>Encuéntranos</h2>
+                <p>Visítanos en nuestro punto físico</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <div class="ubicacion-info">
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="info-content">
+                                <h4>Dirección</h4>
+                                <p>KRA 42 Calle 2B-14, Valledupar, Cesar</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="info-content">
+                                <h4>Horarios</h4>
+                                <p>Lunes a sábado: 9:00 AM – 8:00 PM</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="info-content">
+                                <h4>Contacto</h4>
+                                <p>+57 310 705 0064</p>
+                            </div>
+                        </div>
+                        <div class="ubicacion-buttons mt-4">
+                            <a href="https://www.google.com/maps/search/?api=1&query=KRA+42+Calle+2B-14,+Valledupar,+Cesar" target="_blank" class="btn btn-gold">
+                                <i class="fas fa-map-marked-alt me-2"></i>Abrir en Google Maps
+                            </a>
+                            <a href="https://wa.me/573107050064" target="_blank" class="btn btn-outline-gold">
+                                <i class="fab fa-whatsapp me-2"></i>Contactar por WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="map-container">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.1234567890123!2d-73.25345678901234!3d10.463456789012345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTDCsDI3JzQ4LjQiTiA3M8KwMTUnMTIuNCJX!5e0!3m2!1ses!2sco!4v1234567890123!5m2!1ses!2sco" 
+                            width="100%" 
+                            height="400" 
+                            style="border:0; border-radius: 15px;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Final Section -->
+    <section id="cta-final" class="cta-final-section">
+        <div class="container">
+            <div class="cta-content" data-aos="fade-up">
+                <h2>Te esperamos hoy en Daniel Sport Barbería</h2>
+                <p>Ven y disfruta de la mejor experiencia de corte y estilo en Valledupar</p>
+                <div class="cta-buttons">
+                    <a href="#ubicacion" class="btn btn-gold btn-lg me-3">
+                        <i class="fas fa-map-marker-alt me-2"></i>Ver Ubicación
+                    </a>
+                    <a href="https://wa.me/573107050064" target="_blank" class="btn btn-outline-gold btn-lg">
+                        <i class="fab fa-whatsapp me-2"></i>WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+                    <div class="footer-brand">
+                        <img src="images/logo.jpeg" alt="Daniel Sport Barbería" class="footer-logo">
+                        <h4>Daniel Sport Barbería</h4>
+                        <p>Estilo, precisión y actitud en cada corte. La mejor experiencia de barbería en Valledupar.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+                    <div class="footer-links">
+                        <h4>Enlaces Rápidos</h4>
+                        <ul>
+                            <li><a href="#servicios">Servicios</a></li>
+                            <li><a href="#galeria">Galería</a></li>
+                            <li><a href="#productos">Productos</a></li>
+                            <li><a href="#testimonios">Testimonios</a></li>
+                            <li><a href="#ubicacion">Ubicación</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-contact">
+                        <h4>Contacto</h4>
+                        <ul>
+                            <li><i class="fas fa-map-marker-alt"></i> KRA 42 Calle 2B-14, Valledupar</li>
+                            <li><i class="fas fa-phone"></i> +57 310 705 0064</li>
+                            <li><i class="fas fa-clock"></i> Lun-Sáb: 9:00 AM - 8:00 PM</li>
+                        </ul>
+                        <div class="footer-social">
+                            <a href="https://wa.me/573107050064" target="_blank" class="social-link">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                            <a href="https://www.instagram.com/laradaniel261993?igsh=cWJpd2hzaGQybjRn" class="social-link">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="social-link">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <p class="footer-text">&copy; 2026 Daniel Sport Barbería. Todos los derechos reservados.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </footer>
-    <script src="java/main.js"></script>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/573107050064" target="_blank" class="whatsapp-float">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     
+    <!-- AOS Animation JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="java/main.js"></script>
 </body>
 </html>
