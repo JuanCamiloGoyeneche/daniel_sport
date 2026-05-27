@@ -1409,12 +1409,12 @@ section {
         font-size: 0.95rem;
     }
     
-    .cta-buttons {
+    .hero-buttons {
         flex-direction: column;
         width: 100%;
     }
     
-    .cta-buttons .btn {
+    .hero-buttons .btn {
         width: 100%;
         max-width: 300px;
     }
@@ -1613,9 +1613,37 @@ section {
         font-size: 0.9rem;
     }
     
+    /* Hero buttons in CTA section */
+    .hero-buttons {
+        flex-direction: column;
+        width: 100%;
+        gap: 15px;
+    }
+    
+    .hero-buttons .btn {
+        width: 100%;
+        max-width: 300px;
+        padding: 12px 30px;
+        font-size: 0.9rem;
+    }
+    
+    .hero-buttons .btn-lg {
+        padding: 12px 30px;
+        font-size: 0.9rem;
+    }
+    
     /* Footer */
     .footer {
         padding: 30px 0;
+    }
+    
+    .footer-brand {
+        margin-bottom: 30px;
+    }
+    
+    .footer-links,
+    .footer-contact {
+        margin-bottom: 30px;
     }
     
     .footer-text {
